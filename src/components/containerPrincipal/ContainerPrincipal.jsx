@@ -14,7 +14,7 @@ const ContainerPrincipal = () => {
                             <p className='text-6xl font-bold'>Food</p>
                             <p className='text-6xl font-bold '>Delivery</p>
                         </div>
-                        <img src={arrow} alt="arrow"  className='absolute top-[-120px] right-[250px]'/>
+                        <img src={arrow} alt="arrow"  className='absolute top-[-120px] right-[20px]'/>
                 </div>
                 <div>
                     <p className='text-2xl text-light-gray'>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium</p>
