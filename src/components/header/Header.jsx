@@ -5,9 +5,9 @@ import Cart from '../../assets/Cart.svg';
 
 const Header = () => {
   return (
-    <nav className='flex items-center justify-evenly h-16 font-sans '>
-      <div className='flex items-center  w-[120px] h-16'>
-       <img src={logo} alt="chef-hat" className='h-10 mb-[5px] self-center mb-[12px]'/>
+    <nav className='flex items-center justify-evenly h-16 font-sans'>
+      <div className='flex gap-x-50 items-center  w-[120px] h-16'>
+       <img src={logo} alt="chef-hat" className='h-10 mb-[14px] self-center mb-[12px]'/>
        <h2 className='text-4xl font-black '>Foo</h2>
       </div>
 
