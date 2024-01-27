@@ -33,7 +33,7 @@ const ContainerPrincipal = () => {
             </div>
         </div>
 
-        <div className='flex justify-center items-center h-[70vh] mt-[50px]  min-w-[50vh] bg-blue-700'>
+        <div className='flex justify-center items-center h-[70vh] mt-[50px]  min-w-[50vh]'>
             <img src={foodImg} alt="propaganda da comida " />
         </div>
     </div>
