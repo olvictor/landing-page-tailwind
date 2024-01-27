@@ -3,6 +3,8 @@ import foodImg from '../../assets/foodImg.png'
 import arrow from '../../assets/arrow.png'
 import play from '../../assets/play.png'
 import Rating from '../rating/rating'
+
+
 const ContainerPrincipal = () => {
   return (
     <div className='flex mt-[50px] h-5/6 gap-0 px-[100px]'> 
@@ -21,8 +23,8 @@ const ContainerPrincipal = () => {
                 </div>
 
                 <div className='flex gap-3 justify-left items-center'>
-                    <button className='rounded-[50px] h-[70px] w-[200px] text-2xl bg-heavy-gray text-white'>Order Now</button>
-                    <div className='flex items-center'>
+                    <button className='rounded-[50px] h-[70px] w-[200px] text-2xl bg-heavy-gray text-white hover:border-white hover:border-2'>Order Now</button>
+                    <div className='flex items-center hover:cursor-pointer hover:scale-105 hover:underline'>
                         <img src={play} alt="" className='mt-[35px] h-20' />
                         <p className='text-2xl font-medium'>Watch Video</p>
                     </div>
@@ -31,8 +33,8 @@ const ContainerPrincipal = () => {
             </div>
         </div>
 
-        <div className='flex justify-center items-center h-[70vh] mt-[50px]'>
-            <img src={foodImg} alt="propaganda da comida h-[100%]" />
+        <div className='flex justify-center items-center h-[70vh] mt-[50px]  min-w-[50vh] bg-blue-700'>
+            <img src={foodImg} alt="propaganda da comida " />
         </div>
     </div>
   )
