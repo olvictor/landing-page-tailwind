@@ -4,7 +4,7 @@ import lupa from '../../assets/Vector.png';
 import Cart from '../../assets/Cart.svg';
 
 const Header = () => {
-  const [menuAtivo,setMenuAtivo] = useState(false)
+  const [menuAtivo,setMenuAtivo] = useState(false);
 
   return (
     <nav className='flex items-center justify-between  h-16 font-sans'>
@@ -41,7 +41,7 @@ const Header = () => {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
-        <ul className={`animate-slideInTop gap-x-10 text-2xl font-medium absolute left-[-50px] my-[10px] ${menuAtivo ? 'hidden' : 'block'} z-10  lg:hidden` }>
+        <ul className={`animate-slideInTop gap-x-10 text-2xl font-medium absolute left-[-50px] my-[10px] ${!menuAtivo ? 'hidden' : 'block'} z-10  lg:hidden` }>
           <li className='hover:underline'><a href="#">Home</a></li>
           <li className='hover:underline'><a href="#">Menu</a></li>
           <li className='hover:underline'><a href="#">Contact</a></li>
