@@ -7,14 +7,14 @@ import Rating from '../rating/rating'
 
 const ContainerPrincipal = () => {
   return (
-    <div className='flex mt-[50px] h-5/6 gap-0 lg:px-[100px] px-[0px]'> 
-        <div className='w-[70%]'>        
+    <div className='flex mt-[50px] h-5/6 gap-0 lg:px-[50px] px-[0px]'> 
+        <div className='w-[70%] md:w-[50%]'>        
             <div className='flex flex-col gap-[30px] md:gap-[50px] justify-center mt-[100px] h-[70vh]'>
                 <div className='flex relative text-center justify-left gap-3 '>
-                        <h1 className='text-8xl md:text-9xl font-extrabold text-font-orange'>Fast</h1>
+                        <h1 className='text-7xl md:text-9xl font-extrabold text-font-orange'>Fast</h1>
                         <div className='text-left text-heavy-gray'>
-                            <p className='text-5xl md:text-6xl font-bold'>Food</p>
-                            <p className='text-5xl md:text-6xl font-bold '>Delivery</p>
+                            <p className='text-4xl md:text-6xl font-bold'>Food</p>
+                            <p className='text-4xl md:text-6xl font-bold '>Delivery</p>
                         </div>
                         <img src={arrow} alt="arrow"  className='absolute top-[-120px] right-[30px] lg:right-[-80px] xl:right-[50px] 2xl:right-[20px] hidden'/>
                 </div>
@@ -23,7 +23,7 @@ const ContainerPrincipal = () => {
                 </div>
 
                 <div className='flex gap-3 justify-left items-center'>
-                    <button className='rounded-[50px] h-[70px] w-[200px] text-2xl bg-heavy-gray text-white hover:border-white hover:border-2'>Order Now</button>
+                    <button className='md:rounded-[50px] md:h-[70px] w-[250px] h-[40px] rounded-md md:text-2xl bg-heavy-gray text-white hover:border-white hover:border-2'>Order Now</button>
                     <div className='flex items-center hover:cursor-pointer hover:scale-105 hover:underline'>
                         <img src={play} alt="" className='mt-[35px] h-20' />
                         <p className='text-2xl font-medium'>Watch Video</p>
