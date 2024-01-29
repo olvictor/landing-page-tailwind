@@ -11,13 +11,14 @@ const Header = () => {
        <h2 className='text-4xl font-black'>Foo</h2>
       </div>
 
-      <ul className='flex gap-x-10 text-2xl font-medium'>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Shop</a></li>
+      <ul className='flex gap-x-10 text-2xl font-medium hidden lg:flex'>
+        <li className='hover:underline'><a href="#">Home</a></li>
+        <li className='hover:underline'><a href="#">Menu</a></li>
+        <li className='hover:underline'><a href="#">Contact</a></li>
+        <li className='hover:underline'><a href="#">Shop</a></li>
       </ul>
-      <div className='w-80 h-14 flex relative drop-shadow-2xl'>
+      
+      <div className='w-80 h-14 relative drop-shadow-2xl hidden xl:flex'>
         <img src={lupa} alt="lupa" className='h-6 absolute left-10 top-4'/>
         <input type="text" placeholder='Search' className='rounded-3xl w-96 bg-bg-input-color appearance-none focus:outline-none pl-20 pr-36 text-xl placeholder-neutral-950'/>
         <span className='text-4xl absolute right-11 top-2 text-light-gray opacity-35 font-medium'>|</span>
@@ -28,6 +29,15 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      <div className='hover:cursor-pointer xl:hidden'>
+        <img src={lupa} alt="lupa" />
+      </div>
+      <button class="lg:hidden focus:outline-none" id="menu-toggle">
+      <svg class="w-8 h-8 border-2 border-black rounded-lg hover:scale-110 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
     </nav>
   )
 }
