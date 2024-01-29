@@ -16,7 +16,7 @@ const ContainerPrincipal = () => {
                             <p className='text-6xl font-bold'>Food</p>
                             <p className='text-6xl font-bold '>Delivery</p>
                         </div>
-                        <img src={arrow} alt="arrow"  className='absolute top-[-120px] right-[-80px] lg:right-[-80px] xl:right-[50px] 2xl:right-[20px]'/>
+                        <img src={arrow} alt="arrow"  className='absolute top-[-120px] right-[30px] lg:right-[-80px] xl:right-[50px] 2xl:right-[20px]'/>
                 </div>
                 <div>
                     <p className='text-2xl text-light-gray'>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium</p>
@@ -34,7 +34,7 @@ const ContainerPrincipal = () => {
         </div>
 
         <div className='flex justify-center items-center h-[70vh] mt-[50px] hidden  min-w-[50vh] 2xl:inline-block xl:w-[30vh]'>
-            <img src={foodImg} alt="propaganda da comida " className='h-[100%] min-w-max' />
+            <img src={foodImg} alt="propaganda da comida " className='h-[100%] min-w-max animate-fadeIn' />
         </div>
     </div>
   )

@@ -6,7 +6,7 @@ import Header from './components/header/Header'
 function App() {
 
   return (
-    <div className='bg-background-color h-screen px-40 py-10'>
+    <div className='bg-background-color h-screen px-10 py-10 lg:px-40 '>
       <Header />
       <ContainerPrincipal />
     </div>

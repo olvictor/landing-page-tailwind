@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/chef-hat.png';
 import lupa from '../../assets/Vector.png';
 import Cart from '../../assets/Cart.svg';
 
 const Header = () => {
+  const [menuAtivo,setMenuAtivo] = useState(false)
+
   return (
     <nav className='flex items-center justify-between  h-16 font-sans'>
       <div className='flex gap-x-[10px] items-center  w-[120px] h-16'>
@@ -11,7 +13,7 @@ const Header = () => {
        <h2 className='text-4xl font-black'>Foo</h2>
       </div>
 
-      <ul className='flex gap-x-10 text-2xl font-medium hidden lg:flex'>
+      <ul className='animate-fadeIn flex gap-x-10 text-2xl font-medium hidden lg:flex'>
         <li className='hover:underline'><a href="#">Home</a></li>
         <li className='hover:underline'><a href="#">Menu</a></li>
         <li className='hover:underline'><a href="#">Contact</a></li>
@@ -33,11 +35,19 @@ const Header = () => {
       <div className='hover:cursor-pointer xl:hidden'>
         <img src={lupa} alt="lupa" />
       </div>
-      <button class="lg:hidden focus:outline-none" id="menu-toggle">
-      <svg class="w-8 h-8 border-2 border-black rounded-lg hover:scale-110 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-      </svg>
-    </button>
+      <div class='flex-col relative'>
+        <button class="lg:hidden focus:outline-none" id="menu-toggle" onClick={()=> setMenuAtivo(!menuAtivo)}>
+          <svg class="w-8 h-8 border-2 border-black rounded-lg hover:scale-110 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul className={`animate-slideInTop gap-x-10 text-2xl font-medium absolute left-[-50px] my-[10px] ${menuAtivo ? 'hidden' : 'block'} z-10  lg:hidden` }>
+          <li className='hover:underline'><a href="#">Home</a></li>
+          <li className='hover:underline'><a href="#">Menu</a></li>
+          <li className='hover:underline'><a href="#">Contact</a></li>
+          <li className='hover:underline'><a href="#">Shop</a></li>
+        </ul>
+      </div>
     </nav>
   )
 }

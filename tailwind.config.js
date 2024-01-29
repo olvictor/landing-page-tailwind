@@ -15,6 +15,10 @@ export default {
       },
       fontFamily: {
         sans: ['Poppins','sans-serif']
+      },
+      animation :{
+        'fadeIn':  'fadeIn 1s ease-in-out',
+        'slideInTop' : 'slide-in-top .5s ease-in-out'
       }
     },
   },
